@@ -150,3 +150,190 @@ Service Layer
 Mock Database (JSON)
         ↓
 Gemini API
+```
+
+---
+
+# Project Structure
+
+```text
+akilli-kobi-asistani/
+├── backend/
+│   ├── app/
+│   │   ├── main.py
+│   │   ├── routes/
+│   │   ├── services/
+│   │   ├── database/
+│   │   ├── models/
+│   │   └── core/
+│   ├── requirements.txt
+│   ├── .env
+│   └── .env.example
+│
+├── frontend/
+│   ├── index.html
+│   ├── style.css
+│   └── app.js
+│
+├── README.md
+└── .gitignore
+```
+
+---
+
+# API Endpoints
+
+## Orders
+
+* `GET /orders`
+* `GET /orders/{id}`
+
+## Stock
+
+* `GET /stock`
+
+## Alerts
+
+* `GET /alerts`
+
+## Analytics
+
+* `GET /analytics/daily-summary`
+
+## AI Chat
+
+* `POST /chat`
+
+---
+
+# Technologies Used
+
+## Backend
+
+* Python
+* FastAPI
+* Uvicorn
+* Google Gemini API
+
+## Frontend
+
+* HTML5
+* CSS3
+* JavaScript
+
+## AI
+
+* Google Gemini
+* Natural Language Processing
+
+---
+
+# Installation
+
+## Clone Repository
+
+```bash
+git clone https://github.com/koopilot-ai/akilli-kobi-asistani.git
+```
+
+---
+
+## Backend Setup
+
+```bash
+cd backend
+python -m venv venv
+```
+
+Activate virtual environment:
+
+### Windows
+
+```bash
+.\venv\Scripts\activate
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Create `.env` file:
+
+```env
+GEMINI_API_KEY=your_api_key
+APP_NAME=StockPilot AI
+```
+
+Run backend:
+
+```bash
+uvicorn app.main:app --reload
+```
+
+Backend URL:
+
+```text
+http://127.0.0.1:8000
+```
+
+Swagger Docs:
+
+```text
+http://127.0.0.1:8000/docs
+```
+
+---
+
+## Frontend Setup
+
+Open a new terminal:
+
+```bash
+cd frontend
+python -m http.server 5500
+```
+
+Frontend URL:
+
+```text
+http://127.0.0.1:5500
+```
+
+---
+
+# Future Improvements
+
+Potential future improvements include:
+
+* Real database integration
+* Role-based authentication system
+* WhatsApp Business API integration
+* Trendyol / Shopify integration
+* Real-time notifications
+* Advanced AI analytics
+* Sales forecasting
+* Customer sentiment analysis
+
+---
+
+# Hackathon Focus
+
+This project was developed as an AI-powered operational automation platform for SMEs and cooperatives.
+
+The main goal is to demonstrate how artificial intelligence can simplify operational workflows and improve customer communication efficiency.
+
+---
+
+# Team Members
+
+* Arzu Yaprak
+* Döne Sakız
+* Nida Elvin Mertoğlu
+
+---
+
+# Demo
+
+Demo video and screenshots will be added here.

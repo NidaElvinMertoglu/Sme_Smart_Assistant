@@ -335,5 +335,36 @@ The main goal is to demonstrate how artificial intelligence can simplify operati
 ---
 
 # Demo
+## Screenshots & UI
 
-Demo video and screenshots will be added here.
+### Dashboard Overview
+<p align="center">
+  <img src="images/Untitled Design.png" width="800" alt="App Interface">
+</p>
+
+### AI Analytics & Graphs
+<p align="center">
+  <img src="images/ai_graphs.jpeg" width="800" alt="AI Graphs">
+</p>
+
+### Assistant Interactions & Operations
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="images/example.jpeg" width="400" alt="Example Screen"><br>
+      <sub><b>Assistant Interaction</b></sub>
+    </td>
+    <td align="center">
+      <img src="images/example1.jpeg" width="400" alt="Critical Notifications"><br>
+      <sub><b>Critical Notifications</b></sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" colspan="2">
+      <br>
+      <img src="images/example2.jpeg" width="500" alt="Operations Summary"><br>
+      <sub><b>Operations Summary</b></sub>
+    </td>
+  </tr>
+</table>
+

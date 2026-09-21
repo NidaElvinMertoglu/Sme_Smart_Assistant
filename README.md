@@ -335,6 +335,8 @@ The main goal is to demonstrate how artificial intelligence can simplify operati
 ---
 
 # Demo
+## Video
+[![StockPilot AI Demo](https://img.youtube.com/vi/TUnSTAvhtp0/hqdefault.jpg)](https://www.youtube.com/watch?v=TUnSTAvhtp0)
 ## Screenshots & UI
 
 ### Dashboard Overview

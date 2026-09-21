@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StockPilot AI | Akıllı KOBİ Asistanı</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="logo">
+        <span class="logo-icon">✦</span>
+        <div>
+          <h1>StockPilot AI</h1>
+          <p>Akıllı KOBİ Asistanı</p>
+        </div>
+      </div>
+
+      <nav>
+        <a class="active" data-target="dashboardSection">Dashboard</a>
+        <a data-target="ordersSection">Siparişler</a>
+        <a data-target="stockSection">Stok</a>
+        <a data-target="alertsSection">Uyarılar</a>
+        <a data-target="chatSection">AI Asistan</a>
+        <a data-target="summarySection">AI Özeti</a>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar" id="dashboardSection">
+        <div>
+          <h2>Operasyon Paneli</h2>
+          <p>KOBİ ve kooperatifler için AI destekli günlük iş takibi</p>
+        </div>
+        <span class="status-badge">Backend Aktif</span>
+      </header>
+
+      <section class="summary-grid">
+  <div class="summary-card clickable-card" data-target="ordersSection">
+    <p>Toplam Sipariş</p>
+    <h3 id="totalOrders">-</h3>
+  </div>
+
+  <div class="summary-card clickable-card" data-target="stockSection">
+    <p>Kritik Stok</p>
+    <h3 id="lowStockCount">-</h3>
+  </div>
+
+  <div class="summary-card clickable-card" data-target="alertsSection">
+    <p>Geciken Kargo</p>
+    <h3 id="delayedOrders">-</h3>
+  </div>
+
+  <div class="summary-card clickable-card" data-target="summarySection">
+    <p>Tahmini Gelir</p>
+    <h3 id="estimatedRevenue">-</h3>
+  </div>
+</section>
+
+      <section class="content-grid">
+        <div class="left-column">
+          <div class="panel" id="ordersSection">
+            <div class="panel-header">
+              <h3>Siparişler</h3>
+              <span>Canlı veri</span>
+            </div>
+            <div id="ordersList" class="list"></div>
+          </div>
+
+          <div class="panel" id="stockSection">
+            <div class="panel-header">
+              <h3>Stok Durumu</h3>
+              <span>Kritik eşik kontrolü</span>
+            </div>
+            <div id="stockList" class="list"></div>
+          </div>
+        </div>
+
+        <div class="right-column">
+          <div class="panel alert-panel" id="alertsSection">
+            <div class="panel-header">
+              <h3>Akıllı Uyarılar</h3>
+              <span>Otomatik</span>
+            </div>
+            <div id="alertsList" class="list"></div>
+          </div>
+
+          <div class="panel chat-panel" id="chatSection">
+            <div class="panel-header">
+              <h3>AI Cevap Taslağı Asistanı</h3>
+              <span>Müşteri mesajlarını otomatik yanıtlar.</span>
+            </div>
+
+            <div id="chatMessages" class="chat-messages">
+              <div class="bot-message">
+                Merhaba, müşteriden gelen mesajı buraya yaz. Sipariş, stok ve kargo verilerini kontrol ederek işletme adına cevap taslağı oluşturayım.
+              </div>
+            </div>
+
+            <div class="chat-input">
+              <input
+                id="chatInput"
+                type="text"
+                placeholder="Örn: 128 numaralı siparişim nerede?"
+              />
+              <button id="sendButton">Gönder</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel daily-summary" id="summarySection">
+  <div class="panel-header">
+    <h3>Günlük AI Operasyon Özeti</h3>
+    <span>Canlı Analitik</span>
+  </div>
+
+  <p id="dailySummary">Yükleniyor...</p>
+
+  <div class="chart-container">
+    <div class="chart-bar" style="height: 40%">
+      <span>Pzt</span>
+    </div>
+
+    <div class="chart-bar" style="height: 65%">
+      <span>Sal</span>
+    </div>
+
+    <div class="chart-bar" style="height: 55%">
+      <span>Çar</span>
+    </div>
+
+    <div class="chart-bar" style="height: 85%">
+      <span>Per</span>
+    </div>
+
+    <div class="chart-bar" style="height: 75%">
+      <span>Cum</span>
+    </div>
+
+    <div class="chart-bar" style="height: 95%">
+      <span>Cmt</span>
+    </div>
+
+    <div class="chart-bar" style="height: 70%">
+      <span>Paz</span>
+    </div>
+  </div>
+</section>
+  
+
+  <script src="app.js"></script>
+</body>
+</html>
